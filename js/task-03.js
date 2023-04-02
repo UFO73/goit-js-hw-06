@@ -17,4 +17,4 @@ const galleryBox = document.querySelector('.gallery');
 
 const box = images.map(({url, alt}) => `<li><img src="${url}" alt="${alt}"></li>`).join('');
 
-galleryBox.insertAdjacentHTML("beforeend", box)
+galleryBox.insertAdjacentHTML("beforeend", box);
