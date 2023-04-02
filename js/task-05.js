@@ -1,12 +1,11 @@
 const textInpuy = document.querySelector('#name-input');
 const userName = document.querySelector('#name-output');
 
-console.dir(userName)
 
 textInpuy.addEventListener('input', (evn) => {
-    if(userName.textContent === "") {
+    userName.textContent = evn.currentTarget.value;  
+    if(textInpuy.value.length === 0) {
         userName.textContent = 'Anonymous'
     }
-    userName.textContent = evn.currentTarget.value;  
 });
 
